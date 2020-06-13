@@ -2,3 +2,15 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "bitsapien"
 theme = "hugo-theme-basic"
+enableEmoji = true 
+description = "Personal site for bitsapien"
+
+[[params.menu]] 
+  name = "posts"
+  url = "posts/"
+[[params.menu]]
+  name = "about"
+  url = "about/"
+
+[taxonomies]
+  tag = "tags"
