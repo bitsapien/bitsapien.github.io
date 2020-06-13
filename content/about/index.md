@@ -1,7 +1,7 @@
 ---
-title: "About"
+title: "About Me"
 date: 2020-06-13T20:05:48+05:30
 draft: false
 ---
 
-Here I am, this is me.
+I love art, socio-economic issues, and technology. ❤️
