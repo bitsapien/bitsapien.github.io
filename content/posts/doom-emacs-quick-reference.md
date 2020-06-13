@@ -1,6 +1,6 @@
 ---
 title: "Doom Emacs Quick Reference"
-date: 2020-06-13T21:17:27+05:30
+date: 2020-03-09T21:17:27+05:30
 draft: true
 ---
 
