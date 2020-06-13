@@ -1,4 +1,4 @@
-baseURL = "https://bitsapien.gitlab.io/blog/"
+baseURL = "https://blog.bitsapien.dev/"
 languageCode = "en-us"
 title = "bitsapien"
 theme = "hugo-theme-basic"
