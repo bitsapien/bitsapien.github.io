@@ -50,4 +50,12 @@ My primary programming languages at this time are Python and Javascript.
 
 My current workstation setup
 
-![]()
+![](./static/workstation.jpg)
+
+
+What am I planning to do soon ?
+
+- System Design
+- Get better at Functional Programming
+- Learn about Spring
+
