@@ -9,6 +9,9 @@ description = "Personal site for bitsapien"
   name = "posts"
   url = "posts/"
 [[params.menu]]
+  name = "talk notes"
+  url = "talk-notes/"
+[[params.menu]]
   name = "about"
   url = "about/"
 

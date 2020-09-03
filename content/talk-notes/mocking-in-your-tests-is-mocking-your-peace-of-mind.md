@@ -6,26 +6,23 @@ draft: true
 
 Slides
 * Mocking in Tests
-  How to divide concerns between unit tests and integration 
-* TDD and mocking are like best friends
-  * Mocking come as a natural to TDD
-  * The way we do TDD influences the way we think about mocking
+  How to divide concerns between unit tests and integration
   * Mocking happens extensively, which is both a good and a bad thing.
 * How does write unit tests?
   * One of the approaches - Arrange Act and Assert
   * You have a feature to create.
   * You start arranging your objects - your mocks, and identifying the subject
-    under test 
+    under test
   * x = a + b + c
-    * Prepare a,b,c 
-    * then you act on it 
-    * assert on behaviour or state 
+    * Prepare a,b,c
+    * then you act on it
+    * assert on behaviour or state
 * Image
   ![]()
   * SUT is Orders, Collaborator is Warehouse
   * style of test is that it does state verification
   * asserting on the side effect as well
-  * 
+  *
 * ![]()
   Using mocks for the above, we are testing implementation or behaviour/ open box testing
   explain code, especially around implementation, you are testing the "how"
@@ -52,37 +49,37 @@ Slides
 * Classicist or Mockist way of testing
   Different styles of testing
   what do you eman by the terms ? Take a cuew form the prev examples
-  
+
   _examples needed_
-  
+
   Keep it quick, and just give my opinion
-  Test setup phase 
-  
+  Test setup phase
+
   C - need to make colloborators for all, fixtures are used
-  
-  M - only need to create the SUT and mocks for its immediate neighbors. 
+
+  M - only need to create the SUT and mocks for its immediate neighbors.
 
   Both sides say this is too much  work. C - as much code as my real implementation
 
   Test isolation
-  
+
   C - bug in colloborator will fail a cascade of other tests, difficult to locate
-  
+
   M - bug in colloborator would only make when it is SUT fail.
 
-  Need for tests and granularity changes in both approaches. 
+  Need for tests and granularity changes in both approaches.
   Clusters of test would test everything ©
   Yiou need more tests (M)
 
   Coupling : How does it impact code?
   (M) - Testing implementation leads to problems in refactoring, they make you think about the implementation of the system.
-  Mock tools spoil the situation with things like “Any” 
+  Mock tools spoil the situation with things like “Any”
 
   Testing
   But both fail
 
 * How your testing style impacts design?
-  
+
   Greater coupling, you test behaviour, refactoring becomes a pain, chances of
   false positives(show diagram for this)
 
@@ -114,7 +111,7 @@ Slides
   ![]()
   ![]()
     Avoid that false positive and make it fail in the integration test
-  * Using composition 
+  * Using composition
     bigger problem to smaller pieces
     decomposition strategy has failed.
     _no connect to prev eg_
@@ -137,27 +134,27 @@ Slides
   * ![]()
     How do you unit test this file ?
     100% code coverage?
-    100% integration test is important here 
+    100% integration test is important here
   * ![]()
 * Principles to use when mocking
   If there is no logic in your code (just pipes and pure compositions), 0% unit test coverage might be acceptable, assuming your integration or functional test coverage is close to 100%. However, if there is logic (conditional expressions, assignments to variables, explicit function calls to units, etc…), you probably do need unit test coverage, and there may be opportunities to simplify your code and reduce mocking requirements.
 
 
-  * Reduce mocking in unit tests and test doubles 
-  * Use test versions of external systems in integration tests. (in memory dbs, h2). 
+  * Reduce mocking in unit tests and test doubles
+  * Use test versions of external systems in integration tests. (in memory dbs, h2).
   * Push side effects to the boundaries of your system so you dont have to unit test them. (make functions/classes pure)
   * Dont take coverage as the holy grail.
   * Reduce coupling
   * Use pub/sub models to communicate
 * Fight your urge to mock in unit tests
-* Use test versions of external systems in integration tests. 
+* Use test versions of external systems in integration tests.
 * Push side effects to the boundaries of your system
 * Dont take coverage as the holy grail.
 * Reduce coupling, reduce your need to use mocks
 * Mocks ain't evil, mocks are too much power, and thus use it responsibly.
 Seperate use from construction - talk to Sarat
 locked the versions
-interface mocking 
+interface mocking
 * Library upgrades would make it fail.
 hexagonal architecture ?
 tests are slower, right? what you meant was I want faster feedback if something
@@ -167,7 +164,7 @@ broke
 - tradeoff, breaking in prod vs slower tests
 lot of failing tests
 * coupling
-probably OO approach 
+probably OO approach
 
 
 
@@ -187,13 +184,13 @@ What is your unit ?
 
 
 Why do we write tests?
-* 
+*
 When do you need a mock ?
 * You have written code that does side-effects (changes system outside it's
   control)
 * Each case will explain what kind of mock you would need
-  * Explain the problem 
-  * Show a solution with the specific kind of mock 
+  * Explain the problem
+  * Show a solution with the specific kind of mock
   * Show an alternative without the need to mock.
   * Case 1: Interface verification
     * Problem: You are writing a script that talks to AWS services in python, you use boto3 inside your code. The actual library's contract changed but the mocking library's contract did not.
@@ -282,7 +279,7 @@ When do you need a mock ?
       static filterActive(users) {
         return users.filter((user) => user.isActive)
       }
-    } 
+    }
     ```
     Test
     ```js
@@ -301,11 +298,11 @@ When do you need a mock ?
     Move the side effect test to integration test
 
 * Spies encourage white box testing
-  Kent Beck's central point in his book is that TDD mitigates fear, allows refactoring, and gives you immediate feedback. 
+  Kent Beck's central point in his book is that TDD mitigates fear, allows refactoring, and gives you immediate feedback.
   Should you test the means or the end itself ?? What is more useful ?
   Dont test the "how" in the unit, test the "what"
-  Was a method called 2/n times 
-  mocks and spies are not required 
+  Was a method called 2/n times
+  mocks and spies are not required
   # flat callstack
 
   ```ruby
@@ -370,26 +367,26 @@ https://www.martinfowler.com/articles/mocksArentStubs.html
 
 * What do you want to test?
     * Implementation or behaviour or state ?
-    * Behaviour state in case of cache 
+    * Behaviour state in case of cache
 
 Scenarios:
 * Side effecting object mocked
-* Stop real mail from being sent object 
+* Stop real mail from being sent object
 
 What is a mock ?
-- Test double 
+- Test double
     - Dummy : used to fill parameter lists - this can be a code smell
-    - Fake: working implementations but takes shortcuts and not used by prod  like moto3 
+    - Fake: working implementations but takes shortcuts and not used by prod  like moto3
     - Stubs: provides canned answers to calls made
-    - Spies: record info on how they were called 
+    - Spies: record info on how they were called
     - Mocks: pre programmed objects with expectations which form a spec for the call.
-        - Behaviour verification 
-        - 
+        - Behaviour verification
+        -
 
 
 
 We mock out state which could be the problem.
-Push your side effects to the boundaries 
+Push your side effects to the boundaries
 
 localstack
 
@@ -397,8 +394,8 @@ localstack
 * One mock talking to another
 * Unneeded complexity
 * Don’t believe in the fact - “write less tests because they run slow”
-* One time effort to setup real things 
-* 
+* One time effort to setup real things
+*
 
 https://stackoverflow.com/questions/1595166/why-is-it-so-bad-to-mock-classes
 https://www.thoughtworks.com/insights/blog/mockists-are-dead-long-live-classicists
@@ -409,14 +406,14 @@ Why is mocking/stubbing dangerous?
 
 But, what happens if your test is too white box and knows so much about how things are implemented that if you refactor something, your test fails and you have to refactor your test? It entirely defeats the purpose of having a test to make sure that you didn’t break anything with your changes.
 
-Point out false positives wala problem 
+Point out false positives wala problem
 
 https://dev.to/asizikov/you-are-mocking-it-wrong-5gh3
 
-To give it a nice catchy start, I'd claim here, that mocks should be used when you have to, but not when you can. 
+To give it a nice catchy start, I'd claim here, that mocks should be used when you have to, but not when you can.
 
 https://news.ycombinator.com/item?id=7809402
-Kent Beck's central point in his book is that TDD mitigates fear, allows refactoring, and gives you immediate feedback. 
+Kent Beck's central point in his book is that TDD mitigates fear, allows refactoring, and gives you immediate feedback.
 
 Extensive mocking makes developers fearful to refactor (thus hurting design) and reduces the quality of feedback. Not to mention it makes your tests hard to refactor too.
 
