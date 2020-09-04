@@ -2,18 +2,18 @@ baseURL = "https://blog.bitsapien.dev/"
 languageCode = "en-us"
 title = "bitsapien"
 theme = "hugo-theme-basic"
-enableEmoji = true 
+enableEmoji = true
 description = "Personal site for bitsapien"
 
-[[params.menu]] 
+[[params.menu]]
   name = "posts"
   url = "posts/"
 [[params.menu]]
   name = "talk notes"
   url = "talk-notes/"
 [[params.menu]]
-  name = "about"
-  url = "about/"
+  name = "now"
+  url = "now/"
 
 [taxonomies]
   tag = "tags"
