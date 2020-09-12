@@ -1,0 +1,25 @@
+# CFP
+
+* Title
+Making your Ruby code "functional"
+* Elevator Pitch
+Functional programming is seeing a rise in popularity in the last couple of years. The barrier to doing FP is the change in the way you think about the problem you want to solve.
+The talk is an attempt to close this gap and demonstrate how FP is done in Ruby.
+* Description
+Have you heard the term "functional programming" and thought to yourself on why would someone use it? Why is it the current "buzz" in town?
+In this talk I will try to answer these questions and demonstrate to you how you can do it in the language you love: Ruby.
+* Notes
+The talk would broadly cover the following questions:
+1. What is Functional Programming(FP) ?
+2. What are it's benefits over an OOP approach?
+3. Why is FP gaining traction in the last couple of years?
+4. How to do FP in Ruby?
+
+I got a taste of FP when doing some Javascript last year. The confidence in testing, code readability, and performance gains (not significant though) were the reasons I went ahead with exploring this school of thought. A few months ago I discovered Elixir which brings in the beauty of Ruby and the power of a functional language. I tried convincing people to move their stack to Elixir or other functional languages, so that they experience it's advantages and its issues but failed miserably. I set out to see what is the easiest way to give a taste of FP to people, the found the answer in showing them how it could be done in the language they already work in. The talk is an outcome of the effort I made to do this for Ruby.
+* Profile
+** Name
+Rahul C
+** Organization
+ThoughtWorks
+** Bio
+A software consultant at ThoughtWorks. He is helping developers discover the value in going the functional programming route. Say "Emacs Evil Swiss Knife" in one sentence and see how his eyes sparkle.

@@ -1,0 +1,58 @@
+#+TITLE: Functional Programming In Javascript
+
+* Why ?
+** Instead of modelling the real world software must acheive the following :
+*** Easy to learn
+*** Fewer lines of code
+*** High Performance
+
+** Zen of Python
+
+Simple is better than complex
+
+Flat is better than nested
+
+Readabilty counts
+
+If the implementation is hard to explain, it's a bad idea.
+
+If the implementation is easy to explain, it maybe a good idea.
+
+** Super confusing (personal experience)
+With prototypes and this? What's "this" ?
+Binding this to the wrong thing.
+Atleast spend some time trying to understand it.
+It is difficult to express it JS's prototypes and stuff
+
+Naturally a functional language but was forced to be like Java because OOP was the
+thing back in the days.
+
+Some history, Brendan Eich (scheme on the browser)
+
+#+BEGIN_SRC javascript
+  const leo = {
+    sound: "woof",
+    talk: () => {
+        console.log(this.sound)
+    }
+  }
+
+  leo.talk() // "woof"
+  let talkFunc = leo.talk // FP
+  talkFunc() // undefined !
+#+END_SRC
+
+
+* Pure functions
+* Immutability 
+* Using no loops 
+* Higher Order functions
+* Persistent data structures for faster and memory optimised stuff 
+* Data in to data out
+* JS
+    * Underscore
+    * Ramda
+    * Lodash
+    * Immutable
+    * Mori
+    * Pure Vanilla 
