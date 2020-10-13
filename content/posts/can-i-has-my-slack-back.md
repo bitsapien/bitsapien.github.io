@@ -14,7 +14,7 @@ Let me give you a few examples of how irritating things can get from a user expe
 
 #### You can have only 6 reactions, human ! 🤐
 
-![](./static/img/ms-teams-reactions.png)
+![](./img/ms-teams-reactions.png)
 
 Like, seriously? Also, one post can have only one reaction, cause are you even human if you have mixed emotions?
 
