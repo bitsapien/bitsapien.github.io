@@ -1,7 +1,7 @@
 ---
 title: "Can I has my slack back?"
 date: 2020-10-14T00:26:14+05:30
-draft: true
+draft: false
 ---
 
 Some context so you empathize with my frustrations that I'd unfold in this post.
