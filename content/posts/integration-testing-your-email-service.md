@@ -1,4 +1,8 @@
-# Integration Testing Your Email sending service with AWS SES
+---
+title: "Integration Testing Your Email sending service with AWS SES"
+date: 2019-11-15T15:28:37+05:30
+draft: true
+---
 
 
 ### Why use the mailbox simulator
@@ -16,7 +20,7 @@ Add a story for what happened today
 https://docs.aws.amazon.com/ses/latest/DeveloperGuide/mailbox-simulator.html#mailbox-simulator-using
 
 
-Stock price comparison : 
-Pull stock prices from source and then find the highest priced stock 
+Stock price comparison :
+Pull stock prices from source and then find the highest priced stock
 http://dev.markitondemand.com/MODApis/Api/v2/Quote/json?symbol=FB
 https://github.com/lispyclouds/graal-example
