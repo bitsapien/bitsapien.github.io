@@ -14,17 +14,17 @@ Let me give you a few examples of how irritating things can get from a user expe
 
 #### You can have only 6 reactions, human ! 🤐
 
-![](./img/ms-teams-reactions.png)
+![](/img/ms-teams-reactions.png)
 
 Like, seriously? Also, one post can have only one reaction, cause are you even human if you have mixed emotions?
 
 Look at what Google Chat offers, for example:
 
-![](./static/img/google-chat-reactions.png)
+![](/img/google-chat-reactions.png)
 
 
 #### Because the order in which you type your markdown matters 🤷🏽‍♂️
-![](./static/img/ms-teams-markdown.gif)
+![](/img/ms-teams-markdown.gif)
 
 To start with, the inplace markdown to styling is highly irritating, to make matters worse, it only works when you type things in a particular order that Teams thinks you should.
 
@@ -33,7 +33,7 @@ To start with, the inplace markdown to styling is highly irritating, to make mat
 Contractors or consultants are invited as "guests" into Microsoft Teams by client companies and do not have the kind of privileges as the employees, which is fair. What I do not understand is the restriction for guests to add their own profile picture.
 
 It like to an alphabet, especially in this "New Normal" phase where everyone is remote.
-![](./static/img/ms-teams-guest-profile.png)
+![](/img/ms-teams-guest-profile.png)
 
 #### Guests shall not know thy first name!
 
@@ -72,7 +72,7 @@ Allowing me to switch off this feature and preserving the chronology of the thre
 
 One of the features that I really like about Teams is how the video adjusts itself to show the face of the people on the call, irrespective of what kinda crop it did to fit everyone in.
 
-![](./static/img/ms-teams-video-calls.png)
+![](/img/ms-teams-video-calls.png)
 
 #### Quick access to documents, or even an issue tracker built into the app.
 
