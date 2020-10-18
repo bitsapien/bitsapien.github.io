@@ -1,11 +1,10 @@
 ---
-title: "How to Speak"
+title: "How to Speak by Patrick Winston"
 date: 2020-10-18T13:07:22+05:30
 draft: false
 ---
 
-Video: https://www.youtube.com/watch?v=Unzc731iCUY
-Title: How to Speak by Patrick Winston
+{{< youtube id="Unzc731iCUY" >}}
 
 * This will ensure success in your life.
 * Knowledge(x3) + Practice(x2) + Inherent Talent(x1)
