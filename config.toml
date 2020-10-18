@@ -6,14 +6,17 @@ enableEmoji = true
 description = "Personal site for bitsapien"
 
 [[params.menu]]
+  name = "now"
+  url = "now/"
+[[params.menu]]
   name = "posts"
   url = "posts/"
 [[params.menu]]
   name = "talk notes"
   url = "talk-notes/"
 [[params.menu]]
-  name = "now"
-  url = "now/"
+  name = "lecture notes"
+  url = "lecture-notes/"
 
 [taxonomies]
   tag = "tags"
