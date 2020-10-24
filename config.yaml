@@ -1,0 +1,63 @@
+baseURL: 'https://blog.bitsapien.dev/'
+languageCode: en-us
+title: bitsapien
+theme: hello-friend-ng
+enableEmoji: true
+description: Personal site for bitsapien
+enableRobotsTXT: true
+disableRSS: false
+author:
+  name: bitsapien
+params:
+  dateform: 'Jan 2, 2006'
+  dateformShort: Jan 2
+  dateformNum: '2006-01-02'
+  dateformNumTime: '2006-01-02 15:04'
+  homeSubtitle: 'tech | socialism | food'
+  disableReadOtherPosts: true
+  enableSharingButtons: true
+  description: bitsapien's home for all kinds of content published
+  keywords: 'homepage, blog, food, rahul chinta, bitsapien'
+  images:
+    - 'https://secure.gravatar.com/avatar/71312ffca1775d45c43afabf53358838'
+  defaultTheme: dark
+  social:
+    - name: twitter
+      url: https://twitter.com/bitsapien_logs
+    - name: github
+      url: https://github.com/bitsapien
+      #    - name: gitlab
+      #      url: https://gitlab.com/bitsapien
+      #    - name: linkedin
+      #      url: https://linkedin.com/in/cspacerahul
+      #    - name: stackoverflow
+      #      url: https://stackoverflow.com/users/755421/bitsapien
+taxonomies:
+  category: blog
+  tag: tags
+  series: series
+languages:
+  en:
+    title: bitsapien
+    subtitle: blog
+    keywords: ''
+    readOtherPosts: Read other posts
+    params:
+      logo:
+        logoText: curl blog.bitsapien.dev
+        logoHomeLink: /
+menu:
+  main:
+    - name: posts
+      url: /posts
+      weight: 2
+    - name: /now
+      url: now/
+      weight: 1
+    - name: lecture notes
+      url: lecture-notes/
+      weight: 3
+    - name: food
+      url: food/
+      weight: 4
+
