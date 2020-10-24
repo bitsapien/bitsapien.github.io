@@ -17,10 +17,12 @@ findpost() {
 }
 
 
-editpost() {
-  post_path="$blog_path/content/posts"
-  looked_up_post=$( ls $post_path | fzf )
-  $EDITOR "$post_path/$looked_up_post"
+editblog() {
+  pushd $blog_path
+  post_path="content"
+  looked_up_post=$( ls $post_path/**/*.md | fzf )
+  $EDITOR "$looked_up_post"
+  popd
 }
 
 til() {
