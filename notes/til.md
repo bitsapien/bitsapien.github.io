@@ -18,3 +18,6 @@ ZSH conditionals at : http://zsh.sourceforge.net/Doc/Release/Conditional-Express
 #### Wed Oct 14 02:30:20 IST 2020
 UX laws can be design principles in general thinking, eg: https://lawsofux.com
 
+#### Fri Oct 23 11:11:14 IST 2020
+Unitary state is a country that does not form a federation of states and the center holds the supreme power. eg: Georgia.
+
