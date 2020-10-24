@@ -17,6 +17,9 @@ description = "Personal site for bitsapien"
 [[params.menu]]
   name = "lecture notes"
   url = "lecture-notes/"
+[[params.menu]]
+  name = "food"
+  url = "food/"
 
 [taxonomies]
   tag = "tags"
