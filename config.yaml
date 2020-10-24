@@ -13,7 +13,7 @@ params:
   dateformShort: Jan 2
   dateformNum: '2006-01-02'
   dateformNumTime: '2006-01-02 15:04'
-  homeSubtitle: 'tech | socialism | food'
+  homeSubtitle: 'tech | socialism | food | art'
   disableReadOtherPosts: true
   enableSharingButtons: true
   description: bitsapien's home for all kinds of content published
