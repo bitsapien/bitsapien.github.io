@@ -1,7 +1,7 @@
 ---
 title: "Vietnamese Pho Ga"
 date: 2020-10-24T16:01:46+05:30
-draft: true
+draft: false
 ---
 
 ![Pho Ga](/img/food/vietnamese-pho-ga.png)
