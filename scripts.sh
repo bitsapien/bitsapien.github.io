@@ -3,19 +3,19 @@
 blog_path="$HOME/gitdisk/projects/bitsapien-blog"
 
 newpost () {
-	post_file=$(echo "$1" | awk '{print tolower($0)}')
+  type=$1
+  title=$2
+  pushd $blog_path
+	post_file=$(echo "$title" | awk '{print tolower($0)}')
 	post_file=${post_file// /-}
   post_file=${post_file//(.|\')/}
 	pushd "$blog_path" || return
-	hugo new posts/"$post_file.md"
-	"$EDITOR" "$blog_path/content/posts/$post_file.md"
+	hugo new $type/"$post_file.md"
+	"$EDITOR" "$blog_path/content/$type/$post_file.md"
+  git add $blog_path/content/$type/$post_file.md
+  git commit -m "Article[$type]: $title"
+
 }
-
-
-findpost() {
-  rg --files -g "*$1*" "$blog_path/content"
-}
-
 
 editblog() {
   pushd $blog_path
@@ -26,19 +26,29 @@ editblog() {
 }
 
 til() {
+  pushd $blog_path
   tilfilepath="$blog_path/notes/til.md"
   echo "#### `date`\n$1\n" >> $tilfilepath
   echo "Filepath: $tilfilepath"
   echo ""
   tail -n 10 $tilfilepath
+  git add $tilfilepath
+  git commit -m "TIL: ${1}:5 ..."
+  popd
+  echo "Push changes when ready"
 }
 
 idea() {
+  pushd $blog_path
   ideafilepath="$blog_path/notes/ideas.md"
-  echo "$1 | tags: $2i\n\n------\n\n" >> $ideafilepath
+  echo "$1 | tags: $2\n\n------\n\n" >> $ideafilepath
   echo "Filepath: $ideafilepath"
   echo ""
   tail -n 10 $ideafilepath
+  git add $ideafilepath
+  git commit -m "Idea: ${1}:5 ..."
+  popd
+  echo "Push changes when ready"
 }
 
 willread() {
