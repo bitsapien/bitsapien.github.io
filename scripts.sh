@@ -64,8 +64,18 @@ willread() {
     echo $csventry >> $readinglistpath
     echo "Wrote to $readinglistpath"
   fi
+  echo "commiting"
+  pushd $blog_path
+  git add $readinglistpath
+  git commit -m "Read: Added $name"
+  git push origin
+  popd
 }
 
-jobs() {
-  vi $blog_path/notes/jobs.md
+function jobapp() {
+  pushd $blog_path
+  $EDITOR notes/jobs.md
+  git add notes/jobs.md
+  git commit
+  popd
 }
