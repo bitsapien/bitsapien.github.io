@@ -40,3 +40,32 @@ idea() {
   echo ""
   tail -n 10 $ideafilepath
 }
+
+willread() {
+  readinglistpath="$blog_path/notes/read.csv"
+  name=$1
+  isbn=$2
+  context=$3
+  echo "ISBN: $isbn"
+  bookdata=$(curl -sL https://openlibrary.org/isbn/$isbn.json)
+  bookname=$(echo $bookdata | jq ".title")
+  bookauthorref=$(echo $bookdata | jq -r ".authors[].key")
+  bookauthor=$(curl -s https://openlibrary.org$bookauthorref.json | jq .name)
+  booktags=$(echo $bookdata | jq -r ".subjects[]")
+  goodreadlink=$(curl -s "https://www.goodreads.com/book/auto_complete?format=json&q=$isbn" | jq -r ".[].description.fullContentUrl")
+  booktagscsv=$(echo $booktags | tr '\n' ' |')
+
+  csventry=",$bookname,$bookauthor,$context,$booktagscsv,$goodreadlink"
+
+  echo $csventry
+  echo "Is this fine? (y/n)"
+  read response
+  if [[ $response == "y" ]]; then
+    echo $csventry >> $readinglistpath
+    echo "Wrote to $readinglistpath"
+  fi
+}
+
+jobs() {
+  vi $blog_path/notes/jobs.md
+}
