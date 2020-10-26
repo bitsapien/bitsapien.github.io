@@ -21,3 +21,7 @@ UX laws can be design principles in general thinking, eg: https://lawsofux.com
 #### Fri Oct 23 11:11:14 IST 2020
 Unitary state is a country that does not form a federation of states and the center holds the supreme power. eg: Georgia.
 
+#### Mon Oct 26 11:42:03 IST 2020
+git reflog show : Shows the distance from head
+
+
