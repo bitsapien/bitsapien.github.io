@@ -25,3 +25,6 @@ Unitary state is a country that does not form a federation of states and the cen
 git reflog show : Shows the distance from head
 
 
+#### Mon Oct 26 14:27:13 IST 2020
+In vim, to comment you need to <leader>cc with nerdcommenter installed
+
