@@ -2,6 +2,8 @@
 
 Resume
 ```
+https://gist.github.com/bitsapien/f5776aa63c6f637eccf8017b5096e8d9
+https://registry.jsonresume.org/bitsapien
 ~/Dropbox/Resume/RahulChinta-Resume-Oct-2020.pdf
 ```
 

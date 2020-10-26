@@ -41,7 +41,13 @@ Gyan:
 - Start from the left
 - Worst case complexity `theta(n)`, this is linear
 
-Divide and conquer algorithm
+```python3
+# BEGIN
+print("this")
+# END
+```
+
+#### Divide and conquer algorithm
 - This is a recursive algorithm
 - Pick the middle element at n/2
 - Look right and check if `n/2 <= n/2 + 1`, and then keep going right.
@@ -49,4 +55,10 @@ Divide and conquer algorithm
 - None of the above pass, then you've found your peak.
 
 
+
+```
+T(n) = T(n/2) + θ(1)
+base case: T(1) = θ(1)
+```
+T(n) = θ(1) + ... θ(1) = θ(log base 2 n)
 
