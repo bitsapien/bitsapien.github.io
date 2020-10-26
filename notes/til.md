@@ -28,3 +28,6 @@ git reflog show : Shows the distance from head
 #### Mon Oct 26 14:27:13 IST 2020
 In vim, to comment you need to <leader>cc with nerdcommenter installed
 
+#### Mon Oct 26 16:26:00 IST 2020
+Use CSS sprites to optimise page load times: https://css-tricks.com/css-sprites/
+
