@@ -3,6 +3,11 @@
 blog_path="$HOME/gitdisk/projects/bitsapien-blog"
 
 newpost () {
+  if [ $# -lt 2 ]
+  then
+    echo "Usage: newpost <article-type> <title>"
+    return 1
+  fi
   type=$1
   title=$2
   pushd $blog_path
