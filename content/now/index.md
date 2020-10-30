@@ -1,11 +1,11 @@
 ---
-title: "Now"
+title: "/now"
 date: 2020-06-13T20:05:48+05:30
 draft: false
 ---
-**Last updated: 24 October, 2020**
+🕐 Wed Oct 28 16:03:07 2020
 
-> This page is inspired by Derek Sivers's post The [/now](https://sivers.org/nowff) page movement. The purpose of this page is to share what I'm currently focussed on, and will be updated as things change.
+> This page is inspired by Derek Sivers's post [The /now page movement](https://sivers.org/nowff). The purpose of this page is to share what I'm currently focussed on, and will be updated as things change.
 
 _This is both for longer-lived interests/ideals and shorter-lived "what I'm currently doing"._
 
@@ -49,16 +49,22 @@ bridge these gaps in society.
 - I love socialising with board games, so hit me up if you are into [Settlers of Catan](https://boardgamegeek.com/boardgame/13/catan), [Risk](https://boardgamegeek.com/boardgame/181/risk), [Scotland Yard](https://boardgamegeek.com/boardgame/438/scotland-yard) or a new game.
 
 
-_My primary programming languages at this time are Python and Javascript._
-
 #### My current workstation setup
 
-![](/img/workstation.jpg)
+{{<figure src="/img/workstation.jpg">}}
 
+**Programming Languages** -> `javascript` `python` `clojure`
+
+**EDITOR** -> [`neovim`](https://neovim.io/) with [.vimrc](https://github.com/bitsapien/dotfiles/blob/master/vim/.vimrc)
+
+**SHELL** -> [`zsh`](https://en.wikipedia.org/wiki/Z_shell) with [zsh-for-humans](https://github.com/romkatv/zsh4humans)
+
+**CONFIG** -> [dotfiles](https://github.com/bitsapien/dotfiles)
 
 #### What am I planning to do soon ?
 
 - System Design
 - Get better at Functional Programming
+- Deep dive javascript
 - Learn about Spring
 
