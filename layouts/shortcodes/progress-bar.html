@@ -1,2 +1,2 @@
-<!-- Usage {{< progress-bar [value] [max-value] [title] >}} -->
+<!-- Usage progress-bar [value] [max-value] [title] -->
 <progress style="width: 100%" title="{{ .Get 2 }}" value="{{ .Get 0 }}" max="{{ .Get 1 }}"> {{ math.Round (mul (div (float (.Get 0)) (.Get 1)) 100) }}% </progress>
