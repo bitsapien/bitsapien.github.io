@@ -19,3 +19,8 @@ Make a transpiler for regex to improve Developer Experience | tags: developer-ex
 ------
 
 
+Do these for practice: https://medium.com/better-programming/6-projects-you-can-build-today-to-level-up-your-front-end-coding-skills-5fef6406426b | tags: frontend,practice,interviews
+
+------
+
+
