@@ -48,7 +48,7 @@ til() {
 
 idea() {
   pushd $blog_path
-  ideafilepath="$blog_path/notes/ideas.md"
+  ideafilepath="$blog_path/content/ideas/index.md"
   echo "$1 | tags: $2\n\n------\n\n" >> $ideafilepath
   echo "Filepath: $ideafilepath"
   echo ""
