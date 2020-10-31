@@ -2,7 +2,10 @@
 title: ✏️ notes
 ---
 
------
-_This section contains lecture/talk/book notes that I watch and read._
+Running notes on lectures/talks/books, I watch and read.
 
------
+_Please forgive the spelling mistakes and bad grammar._
+
+----
+
+
