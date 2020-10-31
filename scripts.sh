@@ -1,6 +1,9 @@
 #! /bin/zsh
 
+blog_server=$(which hugo)
 blog_path="$HOME/gitdisk/projects/bitsapien-blog"
+
+alias editnow="$blog_server server -D > /tmp/hugo.log & $EDITOR $blog_path/content/now/index.md"
 
 newpost () {
   if [ $# -lt 2 ]
