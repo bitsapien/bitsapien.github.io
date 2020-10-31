@@ -6,4 +6,4 @@ draft: true
 
 * JIRA workflow example
 * Frameworks
-
+* oh-my-zsh

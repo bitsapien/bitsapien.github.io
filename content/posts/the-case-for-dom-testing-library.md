@@ -14,7 +14,13 @@ tags:
 
 What do I want to acheive from this talk ?
 
-- Convince folks the right way to think about testing UI.
+- Make a promise
+  - I will attempt to introduce you to a tool to make your testing lives easier.
 - Highlight the challenges we already face.
--
--
+- Convince folks the right way to think about testing UI.
+
+
+Principles in Testing
+- Do not mock
+- Do not test implementation
+- Tests are about gaining confidence

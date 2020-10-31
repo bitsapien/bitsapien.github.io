@@ -1,7 +1,9 @@
 ---
-title: "How to Speak by Patrick Winston"
+title: "How to Speak"
 date: 2020-10-18T13:07:22+05:30
 draft: false
+categories:
+  - Lectures
 ---
 
 {{< youtube id="Unzc731iCUY" >}}

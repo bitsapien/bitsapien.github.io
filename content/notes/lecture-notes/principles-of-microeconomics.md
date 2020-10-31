@@ -2,6 +2,8 @@
 title: "Principles of Microeconomics"
 date: 2020-10-18T12:36:48+05:30
 draft: false
+categories:
+  - Lectures
 ---
 
 

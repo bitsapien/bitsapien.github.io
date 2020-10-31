@@ -23,3 +23,7 @@ Programming paradigms that keep things simple
 - One direction data flow
 - Single responsibiilty principle
 - Decoupling
+
+
+- Tendency to over-engineer - do you need a notification service to show the results of a form submit?
+

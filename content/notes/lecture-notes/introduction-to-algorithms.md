@@ -2,6 +2,8 @@
 title: "Introduction to Algorithms"
 date: 2020-10-22T12:45:54+05:30
 draft: true
+categories:
+  - Lectures
 ---
 
 [Source](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/)
