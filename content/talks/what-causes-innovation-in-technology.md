@@ -17,7 +17,9 @@ And  eventually, whom should the industry support such that this innovation does
     - Analytical study on the amount of money spent and the impact of innovation created(some kind of metrics for this).
 
 ----
+
 ### Structure
+
 * Tell a bunch of stories
 * Show analytical data and share conclusions
 * Show problems in the current assumptions around innovation.
@@ -25,7 +27,20 @@ And  eventually, whom should the industry support such that this innovation does
   - Are the real people being not rewarded?
 
 ----
+
 #### Action Items
+
 * Find those 4-5 stories
+  * Object detection
+  * Internet
+  * + | - Java
+  *  + Unix
+      https://www.youtube.com/watch?v=tc4ROCJYbm0&feature=youtu.be&t=248
+      How this was created? short story
+      Whose money and effort was invested ?
+      What is built on this today? How has it created innovation
+      Who is reaping the benefits of it ?
+  * - Oracle DB
+  * - Microsoft Windows Server
 * Look for studies on this topic for direct data
 * Make slides for the structure above
