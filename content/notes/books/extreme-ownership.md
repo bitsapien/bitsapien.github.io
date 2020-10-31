@@ -1,7 +1,7 @@
 ---
 title: "Extreme Ownership"
 date: 2020-10-31T14:46:18+05:30
-draft: true
+draft: false
 categories:
   - books
 tags:

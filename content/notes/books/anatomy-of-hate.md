@@ -1,7 +1,7 @@
 ---
 title: "Anatomy of Hate"
 date: 2020-10-31T16:48:42+05:30
-draft: true
+draft: false
 categories:
   - books
 ---

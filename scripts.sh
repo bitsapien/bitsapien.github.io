@@ -25,7 +25,7 @@ newpost () {
 
 }
 
-editblog() {
+edit() {
   pushd $blog_path
   post_path="content"
   looked_up_post=$( ls $post_path/**/*.md | fzf )
