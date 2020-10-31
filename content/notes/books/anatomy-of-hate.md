@@ -3,6 +3,7 @@ title: "Anatomy of Hate"
 date: 2019-04-01T22:10:01+05:30
 
 draft: false
+type: posts
 categories:
   - books
 tags:
@@ -17,12 +18,19 @@ _Revati Laul_
 
 {{<progress-bar 222 222 "Reading Progress">}}
 
+
+> India has seen enough instances of horrific hate violence. We tend to imagine
+> the perpertrators of these crimes of hate and bigotry as faceless mobs. We tend to forget that these men are also humans and have lived a normal lives full with dreams, aspirations, love as well as hate. Most of them have families they will go back to after they have murdered/raped/plundered.
+
+> Revati is looking for answers. She is a reputed investigative and TV journalist. Her quest for answers. Took 10 years and talked to 100 men who joined the crimes and foiund few who were willing to reveal the story.
+
+
 * Talks of Gujarat 2002 riots
 * The viciousness spread resulted in all kinds of crime that included rape, merciless killing, loot of Muslims
 * Naroda Patiya massacre
 * How easily who were friends before became foes (Jai Bhawani who killed Majid's family)
 * Graphic description of the details of the incident with a lot of detail
-* A display of the amount of hatred that was filled in the Hindus by the VHP/Bajrang Dal
+* A display of the amount of hatred that was fillled in the Hindus by the VHP/Bajrang Dal
 * 3 men part of the Hindu right mob - Pranav, Dungar, Suresh Judeja (Suresh Langdo)
 * Build up to the Gujarat riot
 * Aftermath
@@ -37,7 +45,7 @@ _Revati Laul_
   * Boasts of raping and pulping to death Muslim women, and who is charged with murdering a pregnant woman and killing her foetus.
   * Marriage to Farzana who he batter, abuses, loves
 * Dungar
-  * Low caste - Bhil (largest tribal group in Gujarat) - they had a century of opression behind thm, which made fear their single driving force.
+  * Low caste - Bhil (largest tribal group in Gujarat) - they had a century of opression behind them, which made fear their single driving force.
   * Intelligent kid
   * Bhils wanted government job status which was a position of official authority and replace their fear of the upper castes.
   * Watched Ramayana on TV, and was inspired to read Mahabharata, Shiv Puran, Garud Puran, the Vishwakarma Puran along with construction job.
@@ -67,11 +75,4 @@ _Revati Laul_
   * Dungar declared to the people to "burn the Muslims" and seek revenge.
   * They were also anti-Christian and anti-NGO
 * "The 28th was not a calendar day. It was a black hole that bent time. In the lives of Suresh, Dungar and Pranav, it re-arranged all previous days and experiences."
-
-Introduction:
-
-India has seen enough instances of horrific hate violence. We tend to imagine
-the perpertrators of these crimes of hate and bigotry as faceless mobs. We tend to forget that these men are also humans and have lived a normal lives full with dreams, aspirations, love as well as hate. Most of them have families they will go back to after they have murdered/raped/plundered.
-
-Revati is looking for answers. She is a reputed investigative and TV journalist. Her quest for answers. Took 10 years and talked to 100 men who joined the crimes and foiund few who were willing to reveal the story.
 
