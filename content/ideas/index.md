@@ -25,3 +25,8 @@ Do these for practice: https://medium.com/better-programming/6-projects-you-can-
 
 
 
+One of the primary arguments against communism is that resources are limited so people need to compete in a capitalist setup for them. The idea is falwed in that eventually it's not the resources that have become limited but the access to it has. 2 cats and one bowl of soup analogy, to make the cats not compete, you'd make the bowl larger. | tags: politics,communism,capitalism
+
+------
+
+
