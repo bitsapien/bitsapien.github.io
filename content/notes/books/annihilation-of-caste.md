@@ -11,20 +11,29 @@ tags:
   - caste
 ---
 
-_B R Ambedkar_
+_Dr. B R Ambedkar_
 
 [Goodreads](https://www.goodreads.com/book/show/8521879-annihilation-of-caste)
 
 {{<progress-bar 50 50 "Reading Progress">}}
 
-#### TLDR;
+### Reading Experience
+
+* 😀 An extremely simple read in terms of the language used.
+* 😀 Ambedkar's command on the English language left me awestruck !
+Learnt a bunch of new words.
+
+---
+
+### TLDR;
+
 * Caste is harmful to the society.
 * Social reform must precede any political or economic reform.
 * The problem with caste is the inbuilt hierarchy, denial of mobility and how your birth defines it.
 * Caste is the basis of the Hindu system as described by the Hindu scriptures.
 * Caste and Varna are one and the same.
 * To reject caste, one has to reject Hinduism.
-
+----
 ... _todo: add notes for everything before this point._
 
 
@@ -161,7 +170,3 @@ _B R Ambedkar_
 
 
 
-### Reading Experience
-* 😀 An extremely simple read in terms of the language used.
-* 😀 Ambedkar's command on the English language left me awestruck !
-Learnt a bunch of new words.

@@ -15,6 +15,12 @@ _by Jocko W and Leif B_
 
 {{<progress-bar 8 313 "Reading Progress">}}
 
+#### Reading Experience
+
+* 😀 The language is not very difficult.
+* 😤 The book seems very repetitive in the points it is trying to drive.
+
+---
 * Leadership lessons from US Navy SEALs fighting in Iraq,
 trying to take out the opponents in a highly dynamic and dangerous environment.
 * The first few pages until introduction will keep driving the same point that
@@ -22,7 +28,3 @@ this is useful everywhere and has been tried, tested, evolved.
 
 
 
-#### Reading Experience
-
-* 😀 The language is not very difficult.
-* 😤 The book seems very repetitive in the points it is trying to drive.

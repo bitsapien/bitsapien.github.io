@@ -46,6 +46,19 @@ til() {
   echo "Push changes when ready"
 }
 
+learn() {
+  pushd $blog_path
+  learnfilepath="$blog_path/content/learn/index.md"
+  echo "$1 | goal: $2\n\n------\n\n" >> $learnfilepath
+  echo "Filepath: $learnfilepath"
+  echo ""
+  tail -n 10 $learnfilepath
+  git add $learnfilepath
+  git commit -m "Learn: ${1}:5 ..."
+  popd
+  echo "Push changes when ready"
+}
+
 idea() {
   pushd $blog_path
   ideafilepath="$blog_path/content/ideas/index.md"
