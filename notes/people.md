@@ -11,3 +11,6 @@ Chris | tags: developer,hate-java,neovim,nvim | links: https://www.chrisatmachin
 Rich Hickey | tags: developer,programming,clojure,functional,no-state | links: https://github.com/tallesl/Rich-Hickey-fanclub  
 ------
 
+Ranjan Sakalley | tags: teams,tech-leads | links: https://rnjn.in/articles/books-that-help-in-team-building/  
+------
+
