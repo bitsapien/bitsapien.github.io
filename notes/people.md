@@ -8,3 +8,8 @@ Joseph N | tags: developer,philosophy,software | links: https://njoseph.me/
 ------
 
 
+Chris | tags: developer,hate-java,neovim,nvim | links: https://www.chrisatmachine.com/blog  
+
+------
+
+
