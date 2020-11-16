@@ -35,3 +35,8 @@ Make a live-reload server on your own | tags: frontend,tooling
 ------
 
 
+Centralisation started with the idea of making discovery easy, but at what cost? | tags: decentralised
+
+------
+
+
