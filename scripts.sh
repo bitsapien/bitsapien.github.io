@@ -5,6 +5,9 @@ blog_path="$HOME/gitdisk/projects/bitsapien-blog"
 
 alias editnow="$blog_server server -D > /tmp/hugo.log & $EDITOR $blog_path/content/now/index.md"
 
+#############################################################
+# => Blog Pages
+# ###########################################################
 newpost () {
   if [ $# -lt 2 ]
   then
@@ -33,43 +36,48 @@ edit() {
   popd
 }
 
-til() {
-  pushd $blog_path
-  tilfilepath="$blog_path/notes/til.md"
-  echo "#### `date`\n$1\n" >> $tilfilepath
-  echo "Filepath: $tilfilepath"
+
+#############################################################
+# => Quick notes
+# ###########################################################
+add_and_commit() {
+  targetpath=$1
+  targetfile=$2
+  changes=$3
+  commit_prefix=$4
+  pushd $targetpath
+  targetfilepath="$targetpath/$targetfile"
+  echo $changes >> $targetfilepath
+  echo "Filepath: $targetfilepath"
   echo ""
-  tail -n 10 $tilfilepath
-  git add $tilfilepath
-  git commit -m "TIL: ${1}:5 ..."
+  tail -n 10 $targetfilepath
+  git add $targetfilepath
+  git commit -m "$commit_prefix: ${1}:5 ..."
   popd
   echo "Push changes when ready"
+}
+til() {
+  changes="#### `date`\n$1\n"
+  add_and_commit $blog_path "notes/til.md" $changes "TIL"
 }
 
 learn() {
-  pushd $blog_path
-  learnfilepath="$blog_path/content/learn/index.md"
-  echo "$1 | goal: $2\n\n------\n\n" >> $learnfilepath
-  echo "Filepath: $learnfilepath"
-  echo ""
-  tail -n 10 $learnfilepath
-  git add $learnfilepath
-  git commit -m "Learn: ${1}:5 ..."
-  popd
-  echo "Push changes when ready"
+  changes="$1 | goal: $2\n\n------\n\n"
+  add_and_commit $blog_path "content/learn/index.md" $changes "Learn"
 }
 
 idea() {
-  pushd $blog_path
-  ideafilepath="$blog_path/content/ideas/index.md"
-  echo "$1 | tags: $2\n\n------\n\n" >> $ideafilepath
-  echo "Filepath: $ideafilepath"
-  echo ""
-  tail -n 10 $ideafilepath
-  git add $ideafilepath
-  git commit -m "Idea: ${1}:5 ..."
-  popd
-  echo "Push changes when ready"
+  changes="$1 | tags: $2\n\n------\n\n"
+  add_and_commit $blog_path "content/ideas/index.md" $changes "Idea"
+}
+
+ppl() {
+  name=$1
+  tags=$2
+  links=$3
+  changes="$name | tags: $tags | links: $links  \n------\n"
+  add_and_commit $blog_path "notes/people.md" $changes "People"
+  echo "You must start using RSS feeds from these people"
 }
 
 willread() {
