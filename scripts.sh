@@ -53,7 +53,7 @@ add_and_commit() {
   echo ""
   tail -n 10 $targetfilepath
   git add $targetfilepath
-  git commit -m "$commit_prefix: ${1}:5 ... ${ci_skip_commit_string}"
+  git commit -m "$commit_prefix: ${1:10} ... ${ci_skip_commit_string}"
   popd
   echo "Push changes when ready"
 }
@@ -79,6 +79,11 @@ ppl() {
   changes="$name | tags: $tags | links: $links  \n------\n"
   add_and_commit $blog_path "notes/people.md" $changes "People"
   echo "You must start using RSS feeds from these people"
+}
+
+readlater() {
+  changes="$1 | context: $2\n\n------\n\n"
+  add_and_commit $blog_path "content/ideas/readlater.md" $changes "Readlater"
 }
 
 willread() {
