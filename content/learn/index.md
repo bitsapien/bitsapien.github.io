@@ -8,7 +8,7 @@ product owner/manager: Learn from https://pathways.thoughtworks.net/select-arche
 ------
 
 
-learn next.js to reason about it | goal: frontend,nextjs,react
+next.js to reason about it | goal: frontend,nextjs,react
 
 ------
 
