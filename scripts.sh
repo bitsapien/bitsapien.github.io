@@ -2,6 +2,7 @@
 
 blog_server=$(which hugo)
 blog_path="$HOME/gitdisk/projects/bitsapien-blog"
+ci_skip_commit_string="[skip ci]"
 
 alias editnow="$blog_server server -D > /tmp/hugo.log & $EDITOR $blog_path/content/now/index.md"
 
@@ -52,7 +53,7 @@ add_and_commit() {
   echo ""
   tail -n 10 $targetfilepath
   git add $targetfilepath
-  git commit -m "$commit_prefix: ${1}:5 ..."
+  git commit -m "$commit_prefix: ${1}:5 ... ${ci_skip_commit_string}"
   popd
   echo "Push changes when ready"
 }
