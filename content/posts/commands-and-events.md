@@ -10,6 +10,8 @@ tags:
 ---
 
 
+When we design solutions for our systems it can get really confusing
+
 * The differences between commands and events.
 * You need not have replay-ability for commands(since they may not be idempotent), events are can be replayed.
 
@@ -23,5 +25,6 @@ tags:
 * Events - SNS
 * Commands - SQS
 
-
+* Message queuing
+* Pub / Sub
 
