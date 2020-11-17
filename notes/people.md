@@ -14,3 +14,6 @@ Rich Hickey | tags: developer,programming,clojure,functional,no-state | links: h
 Ranjan Sakalley | tags: teams,tech-leads | links: https://rnjn.in/articles/books-that-help-in-team-building/  
 ------
 
+Joe Armstrong | tags: programmer,erlang,philosophy | links: https://joearms.github.io/#2018-12-26%20Fun%20with%20the%20TiddlyWiki  
+------
+
