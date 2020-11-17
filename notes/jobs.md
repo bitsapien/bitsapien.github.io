@@ -71,3 +71,25 @@ Link: ?
 * There was a need to store versioned data but we never arrived on a solution back then, but I recently discovered crux that I'm playing around with to understand if this versioning can be achieved with DBs.
 
 * I've briefly worked with the Varnish cache and I tried understanding it, though I've never had a use case to implement  one yet.
+
+
+### Nadine West
+Date: Tue Nov 17 09:11:13 2020
+Link: https://stackoverflow.com/jobs/417479/senior-fullstack-engineer-remote-web-summit/similar?id=445864
+
+**Cover Letter**
+I've worked with Rails for about 3 years before my current work that is mostly focussed on infrastructure and frontend in an e-commerce setup. I really like wearing different hats to deliver software as the situation demands to meet the business goals.
+Currently, my focus has been around ensuring faster software delivery and improving developer experience. I'd love to going back to playing with Ruby.
+
+To highlight the last most interesting assignment with Rails, I helped partially move a monolith that had domains all inter-tangled to 2 microservices. I used the Command/Query segregation model to acheive this. I'd love to talk about this more.
+
+**In brief, could you please describe a technical outage that you have caused, and the lessons learned from it?**
+There was this one incident where I hadn't understood the system's infrastructure properly and I ended up having to take down the website for a few hours before I could fix the problem.
+The problem was that I had pushed in some critical schema changes via migrations and I forgot to run them when deploying. There were references in the code to the schema structure which was making a few of the controller actions to fail. I did a re-deploy andthat fixed it but I had some major learnings from this.
+(1) Push smaller changes to production
+(2) Run the migration step always on deploy.
+(3) Avoid data migration using the Rails migrations, use scripts instead.
+(4) Never change a column inplace.
+
+**Send over a link (github, etc) so we can see how you solve problems with great code. If the code is confidential and not publicly available, let us know here.**
+This is something that I did a while back : https://github.com/sorah/acmesmith/pull/20/files This adds a  Ruby API to a tool that only had a CLI interface.
