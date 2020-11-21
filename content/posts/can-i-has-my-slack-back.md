@@ -85,8 +85,10 @@ None of the other platforms I've used have this feature and I really like the fa
 
 ----------------------------------------------------------------------------------------
 
-_Sure Teams is not the best! Though, I do have hope that they'd fix these tiny but pretty irritating issues and help us live our work lives with sanity._Simple principles that I'd like them to follow:
+_Sure Teams is not the best! Though, I do have hope that they'd fix these tiny but pretty irritating issues and help us live our work lives with sanity._
+
+Simple principles that I'd like them to follow that would fix most of the problems:
 
 * Do not impose opinions.
-* Don't get in the way!
+* Don't get in the way.
 
