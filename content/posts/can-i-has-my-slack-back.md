@@ -2,6 +2,10 @@
 title: "Can I has my slack back?"
 date: 2020-10-14T00:26:14+05:30
 draft: false
+tags:
+  - technology
+  - chat
+  - product thinking
 ---
 
 Some context so you empathize with my frustrations that I'd unfold in this post.
@@ -13,27 +17,27 @@ I only truly started appreciating Slack after I all my frustrations with Microso
 Let me give you a few examples of how irritating things can get from a user experience perspective:
 
 #### You can have only 6 reactions, human ! 🤐
-
-![](/img/ms-teams-reactions.png)
+{{< image src="/img/ms-teams-reactions.png" alt="MS Teams Reactions" position="center" style="width: 100%;border-radius: 5px;" >}}
 
 Like, seriously? Also, one post can have only one reaction, cause are you even human if you have mixed emotions?
 
-Look at what Google Chat offers, for example:
+Look at what Google Chat offers, for example.
 
-![](/img/google-chat-reactions.png)
+{{< image src="/img/google-chat-reactions.png" alt="Google Chat Reactions" position="center" style="width: 100%;border-radius: 5px;" >}}
 
 
 #### Because the order in which you type your markdown matters 🤷🏽‍♂️
-![](/img/ms-teams-markdown.gif)
+{{< image src="/img/ms-teams-markdown.gif" alt="MS Teams Markdown GIF" position="center" style="height: 150px;border-radius: 5px;" >}}
 
-To start with, the inplace markdown to styling is highly irritating, to make matters worse, it only works when you type things in a particular order that Teams thinks you should.
+To start with, the inplace markdown to styling is highly irritating, to make matters worse, it only works when you type things in a particular order that has been pre-determined by Teams.
 
 #### Guests are not humans and don't have a face 🤦🏼‍♀️
 
+{{< image src="/img/ms-teams-guest-profile.png" alt="MS Teams Reactions" position="center" style="100%;border-radius: 5px;" >}}
+
 Contractors or consultants are invited as "guests" into Microsoft Teams by client companies and do not have the kind of privileges as the employees, which is fair. What I do not understand is the restriction for guests to add their own profile picture.
 
-It like to an alphabet, especially in this "New Normal" phase where everyone is remote.
-![](/img/ms-teams-guest-profile.png)
+It like to an alphabet, especially in this "New Normal" phase where everyone is remote, it makes the experience less human.
 
 #### Guests shall not know thy first name!
 
@@ -67,7 +71,6 @@ I have this problem with Google Chat too. The good thing about Teams though is t
 
 Allowing me to switch off this feature and preserving the chronology of the threads would be more than wonderful. Microsoft Teams product owners, hope you are listening. 🥺
 
-----------------------------------------------------------------------------------------
 #### I'll follow your face when on a video call.
 
 One of the features that I really like about Teams is how the video adjusts itself to show the face of the people on the call, irrespective of what kinda crop it did to fit everyone in.
@@ -81,9 +84,8 @@ None of the other platforms I've used have this feature and I really like the fa
 
 ----------------------------------------------------------------------------------------
 
-_Sure Teams is not the best! Though, I do have hope that they'd fix these tiny but pretty irritating issues and help us live our work lives with sanity._
+_Sure Teams is not the best! Though, I do have hope that they'd fix these tiny but pretty irritating issues and help us live our work lives with sanity._Simple principles that I'd like them to follow:
 
-
-* Imposing opinions
-* Least restrictive
+* Do not impose opinions.
+* Don't get in the way!
 
