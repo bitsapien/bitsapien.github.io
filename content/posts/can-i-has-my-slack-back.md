@@ -34,7 +34,7 @@ To start with, the inplace markdown to styling is highly irritating, to make mat
 
 #### -> Guests are not humans and don't have a face 🤦🏼‍♀️
 
-{{< image src="/img/ms-teams-guest-profile.png" alt="MS Teams Reactions" position="center" style="100%;border-radius: 5px;" >}}
+{{< image src="/img/ms-teams-guest-profile.png" alt="MS Teams Reactions" position="center" style="border-radius: 5px;" >}}
 
 Contractors or consultants are invited as "guests" into Microsoft Teams by client companies and do not have the kind of privileges as the employees, which is fair. What I do not understand is the restriction for guests to add their own profile picture.
 
@@ -74,14 +74,15 @@ Allowing me to switch off this feature and preserving the chronology of the thre
 
 #### -> I'll follow your face when on a video call.
 
+{{< image src="/img/ms-teams-video-call.jpg" alt="MS Teams Video" position="center" style="border-radius: 5px;" >}}
 One of the features that I really like about Teams is how the video adjusts itself to show the face of the people on the call, irrespective of what kinda crop it did to fit everyone in.
-
-![](/img/ms-teams-video-calls.png)
+ms-teams-video-call
 
 #### -> Quick access to documents, or even an issue tracker built into the app.
 
-None of the other platforms I've used have this feature and I really like the fact that I do not have to open the browser and do a login dance if I have to access a document.
+{{< image src="/img/ms-teams-todo.png" alt="MS Teams Markdown GIF" position="center" style="height: 150px;border-radius: 5px;" >}}
 
+None of the other platforms I've used have this feature and I really like the fact that I do not have to open the browser and do a login dance if I have to access a document.
 
 ----------------------------------------------------------------------------------------
 
