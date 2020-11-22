@@ -22,9 +22,11 @@ life, it made me nervous.
 - What happens if Apple decides to change how "Notes" works fundamentally?
 
 
-My response to all these risks was leading me into one direction: Decouple
-myself with using Notes for everything. Reaching here has surely been a journey
-for me, philosophically too!
+My response to all these risks have led me to one conclusion - **Decouple
+myself with using Notes for everything.**
+
+The journey to this conclusion has surely worth talking about, which I will save
+for a seperate post.
 
 ### The Problem Statement
 Collect notes from my phone and save it to disk on my
