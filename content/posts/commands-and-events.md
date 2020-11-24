@@ -10,7 +10,7 @@ tags:
 ---
 
 
-When we design solutions for our systems it can get really confusing
+When we design solutions for our systems it can get really confusing what to use
 
 * The differences between commands and events.
 * You need not have replay-ability for commands(since they may not be idempotent), events are can be replayed.

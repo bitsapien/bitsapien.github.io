@@ -1,21 +1,45 @@
 ---
 title: "Pull Request or TBD"
-date: 2020-06-14T15:41:17+05:30
-draft: true
+date: 2019-09-14T15:41:17+05:30
+draft: false
+tags:
+  - technology
+  - software delivery
 ---
 
-PR based model vs TBD
+I've worked in a PR based model for 3+ years for now (including 1 year at TW). It is time for me take a critical look at these 2 approaches.
+
+### MR? PR?
+* PR - Pull Request _Something that you would find in Github_
+* MR - Merge Request _Something you'd find in Gitlab_
 
 
-I've worked in a PR based model for 3+ years for now (including 1 year at TW). Trying to summarise things - 
+### Arguments I've heard against the MR/PR based model
+1. **Long lived feature branches**
 
-*Problems with MR/PR based model*
-1. _Short lived feature branches_ - I had this issue earlier when I'd develop the complete feature in one feature branch and open up a huge PR to merge it. Like @Kapil Dube mentions, this would lead to no proper code review. Though with time I learned to create smaller PRs (slicing at a task level) for the feature I'm working on. I've never faced problems with this approach until when a fresher (fresh out of college) walks in, and they need to be taught this all over again. Also, merging PRs needs to be actively taken care of.
+    I had this issue earlier when I'd develop the complete feature in one
+    feature branch and open up a huge PR to merge it. This would lead to poor
+    code review because of the sheer size of the PR. Though with time I learnt
+    to create smaller PRs (slicing at a task level) for the feature I'm working
+    on. I see this as a valid concern but we could still work around it.
 
-2. _Not "really" doing CI_ - I did not quite understand what this would mean. Having smaller PRs and merging them continuously would also be doing CI. Correct me if I'm wrong.
-3. _Dev needs to switch context_ - We as developers switch context all the while. Moreover, the value you gain is that you have a better understanding of what code other's write and we learn as well.
-4. _It slows down the process_ - I can't argue for or against this, I've never done TBD but I feel this is very subjective and cannot be argued upon as well.
-5. _Branch gardening_ - We might need to do branch gardening even when we do TBD (if syncing your feature branch with master is what you mean by branch gardening)
+2. **Not "really" doing CI**
+
+    Continuous integration is all about sending out smaller
+    (in some cases feature flagged) units of changes to production. The whole
+    feature branch model dis-allows that.
+
+3. **Developer needs to switch context when reviewing**
+
+    We can all agree that context-switches can get tiring. The trade-off is
+    that you get an opportunity to know your codebase better.
+
+4. **It slows down the process**
+
+    I can't argue for or against this, I've never done TBD but I feel this is
+    very subjective and cannot be argued upon as well.
+
+5. **Frequent Branch gardening** - We might need to do branch gardening even when we do TBD (if syncing your feature branch with master is what you mean by branch gardening)
 6. _Lack of trust on tests/pipeline_ - Would that change according to the model you choose ? I do not think that would be affected. You’d only merge your code when the pipeline is green, the only difference is that it now happens on the CI instead of your local machine.
 7.  _Control_ - This is true about PR based models, especially with the concept of ”code owners” who act as gatekeepers. This creates hierarchy, and I cannot build an opinion in my head on whether it is good or bad. Thinking of this differently, it ties back to trust, especially in a case where you have young devs, you’d need this control.
 8. _Merge Hell_ - I feel this would be a problem in TBD as well. For example, this would happen if you probably sync with master and somebody did a painful refactor a while ago. It would break merge hell there too.
