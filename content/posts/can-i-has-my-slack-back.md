@@ -1,5 +1,5 @@
 ---
-title: "Can I has my slack back?"
+title: "I Can Haz Slack?"
 date: 2020-10-14T00:26:14+05:30
 draft: false
 tags:
@@ -7,7 +7,7 @@ tags:
   - chat
   - product thinking
 ---
-{{< image src="/img/can-i-haz-my-meme.jpg" position="center">}}
+{{< image src="/img/can-i-haz-my-meme.jpg" position="center" style="height: 300px;">}}
 
 Some context so you empathize with my frustrations that I'd unfold in this post.
 
