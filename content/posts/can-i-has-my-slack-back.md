@@ -7,6 +7,7 @@ tags:
   - chat
   - product thinking
 ---
+{{< image src="/img/can-i-haz-my-meme.jpg" position="center">}}
 
 Some context so you empathize with my frustrations that I'd unfold in this post.
 
