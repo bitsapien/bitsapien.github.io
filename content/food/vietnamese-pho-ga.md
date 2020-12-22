@@ -26,7 +26,8 @@ The noodles
 * Rice Noodles (_we used a full big pack of [Top Ramen Curry](https://www.amazon.in/Top-Ramen-Curry-Veg-280g/dp/B0186U375U/)_)
 
 Final Serving
-* Spring onions
+* Chopped spring onions
+* Chopped lemon leaves or just some lemon juice
 
 
 ### Recipe
@@ -35,7 +36,7 @@ _To make this dish, you need to prepare: the broth, the spice bag, and the noodl
 The broth
 * Heat 2 litres of water enough for the chicken you want to make.
 * Add the chicken to this water, and leave it until it comes to a boil, oh! and also add salt.
-* The heated mixture would cause the some froth to accumulate on the top, keep removing that using a strainer.
+* The boiling would cause some froth to accumulate on the top, keep removing that using a strainer.
 * Add an onion to this, and keep the broth going like an hour and a half.
 
 The spice bag
@@ -65,7 +66,7 @@ The noodles
 The final serving
 * Remove the chicken from the broth and put on a plate
 * Shred the chicken a bit
-* Now add some noodles in a bowl and add the chicken and the spring onions to them.
+* Now add some noodles in a bowl and add the chicken and the chopped spring onions and lemon leaves to them.
 * Add enough broth to this mixture, and finally add _Muoi Ot_ to taste to the _Pho_.
 * You are done !
 
