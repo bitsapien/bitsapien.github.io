@@ -61,3 +61,7 @@ menu:
       url: food/
       weight: 4
 
+markup:
+  blackFriday:
+    plainIDAnchors: true
+    hrefTargetBlank: true
