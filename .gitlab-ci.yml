@@ -5,13 +5,14 @@ variables:
 
 test:
   script:
-  - env
   - hugo
   except:
   - master
 
 pages:
   script:
+  - hugo version
+  - env
   - hugo
   artifacts:
     paths:
