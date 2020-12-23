@@ -60,8 +60,3 @@ menu:
     - name: food
       url: food/
       weight: 4
-
- markup:
-   goldmark:
-     renderer:
-       unsafe: true
