@@ -5,6 +5,7 @@ variables:
 
 test:
   script:
+  - env
   - hugo
   except:
   - master
