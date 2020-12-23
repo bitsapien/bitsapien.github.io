@@ -18,6 +18,7 @@ For the broth
 For the spice bag
 * A piece of cloth or a paper bag.
 * An inch of cinnamon (_dalchini_)
+* [Star anise](https://en.wikipedia.org/wiki/Illicium_verum)
 * An onion
 * An inch of ginger
 * 4 coriander roots or 6-7 seeds (_dhania_)
@@ -41,7 +42,7 @@ The broth
 
 The spice bag
 * Heat up a non-stick pan
-* Put the spices listed above onto the pan : ginger, onion, coriander, cinnamon
+* Put the spices listed above onto the pan : ginger, onion, coriander, cinnamon, star anise
 * Let them burn until their outermost layer starts turning blakc and charred.
 * Remove the ones that seem to have reached the corrrect level of "burnt".
 * You should now get a nice aroma
