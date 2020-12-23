@@ -13,6 +13,7 @@ pages:
   script:
   - hugo version
   - env
+  - npm install -g postcss-cli
   - hugo
   artifacts:
     paths:
