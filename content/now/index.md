@@ -48,8 +48,8 @@ _This is both for longer-lived interests/ideals and shorter-lived "what I'm curr
 
 - I'm a software consultant at [ThoughtWorks](https://www.thoughtworks.com/), currently working to build a platform for [OTTO](https://www.otto.market/)'s marketplace.
 - I'm actively blogging, and sharing content around my interests above. Follow me on [Twitter](https://twitter.com/bitsapien_log/) and [Instagram](https://www.instagram.com/bitsapien/).
-- Learning to build an interpreter using this [book](https://www.goodreads.com/book/show/32681092-writing-an-interpreter-in-go). I love the way it's going and I'd highly recommend if you are even slightly interestd around Computer Science topics.
-- Reading [Why I'm Not a Hindu](https://www.goodreads.com/book/show/1230699.Why_I_Am_Not_a_Hindu) by Kancha Illaiah Shepherd.
+- Learning to build an interpreter using this [book](https://www.goodreads.com/book/show/32681092-writing-an-interpreter-in-go). I love the way it's going and I'd highly recommend if you are even slightly interested in topics around Computer Science.
+- Reading [Why I\'m Not a Hindu](https://www.goodreads.com/book/show/1230699.Why_I_Am_Not_a_Hindu) by Kancha Illaiah Shepherd.
 - I love socialising with people playing board games, so hit me up if you are into [Settlers of Catan](https://boardgamegeek.com/boardgame/13/catan), [Risk](https://boardgamegeek.com/boardgame/181/risk), [Scotland Yard](https://boardgamegeek.com/boardgame/438/scotland-yard) or help me discover something new.
 
 
