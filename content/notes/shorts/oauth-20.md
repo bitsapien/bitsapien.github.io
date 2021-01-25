@@ -1,5 +1,5 @@
 ---
-title: "Oauth 20"
+title: "OAuth 2.0"
 date: 2021-01-25T16:07:44+05:30
 draft: false
 ---
