@@ -6,6 +6,8 @@ draft: false
 
 ![Pho Ga](/img/food/vietnamese-pho-ga.png)
 
+_Image Credits: Ivo Senner_
+
 
 ### Things you need
 _Serves 4_
