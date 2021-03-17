@@ -27,4 +27,4 @@ Leave me feedback at bitsapien+testsmatter@gmail.com
 
 #### Slides
 
-[PDF](./tests-matter.md)
+[PDF](/testing-matters.pdf)
