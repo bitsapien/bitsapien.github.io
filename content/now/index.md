@@ -20,10 +20,10 @@ _This is both for longer-lived interests/ideals and shorter-lived "what I'm curr
 
 #### What are my beliefs and ideals?
 
-- Simplicity and Minimalism - `Keep it simple honey !`
+- Simplicity and Minimalism
 - I believe technology is one of the most powerful tools to solve most problems.
-- I believe the world is not fair, and equal opportunity is a myth. I strive to bridge these gaps in society.
-- I reject all kinds of discrimination.
+- I believe the world is not fair, and equal opportunity is a myth but we must strive to build an equal society.
+- I reject all kinds of discrimination and against "essentialism" especially when applied to humans.
 - I believe artists make this life worth living and also pave the way for the future. I aspire to be one among them.
 
 #### What are my interests?
