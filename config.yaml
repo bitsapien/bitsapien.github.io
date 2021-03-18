@@ -13,14 +13,16 @@ params:
   dateformShort: Jan 2
   dateformNum: '2006-01-02'
   dateformNumTime: '2006-01-02 15:04'
-  homeSubtitle: 'tech | socialism | food | art'
+  homeSubtitle: 'Personal online journal that serves as an outlet for my thoughts on technology, socialism, food and art.'
   disableReadOtherPosts: true
   enableSharingButtons: true
-  description: bitsapien's home for all kinds of content published
-  keywords: 'homepage, blog, food, rahul chinta, bitsapien'
+  description: bitsapien's online journal to publish my opinions and understandings about topics I care about
+  keywords: 'homepage, now, blog, food, rahul chinta, bitsapien'
   images:
     - 'https://secure.gravatar.com/avatar/71312ffca1775d45c43afabf53358838'
-  defaultTheme: dark
+  defaultTheme: white
+  customCSS:
+    - /css/custom.css
   social:
     - name: twitter
       url: https://twitter.com/bitsapien_logs
