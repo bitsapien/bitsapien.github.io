@@ -13,7 +13,7 @@ params:
   dateformShort: Jan 2
   dateformNum: '2006-01-02'
   dateformNumTime: '2006-01-02 15:04'
-  homeSubtitle: 'Personal online journal that serves as an outlet for my thoughts on technology, socialism, food and art.'
+  homeSubtitle: 'Outlet for my thoughts on technology, socialism, food and art.'
   disableReadOtherPosts: true
   enableSharingButtons: true
   description: bitsapien's online journal to publish my opinions and understandings about topics I care about
