@@ -5,6 +5,7 @@ draft: false
 tags:
   - technology
   - testing
+  - talks
 ---
 
 
