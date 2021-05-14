@@ -28,4 +28,4 @@ Leave me feedback at bitsapien+testsmatter@gmail.com
 
 #### Slides
 
-[PDF](/testing-matters.pdf)
+[PDF](/talks/testing-matters.pdf)
