@@ -10,6 +10,7 @@ tags:
   - discrimination
   - hate
   - violence
+  - society
 ---
 
 _Revati Laul_

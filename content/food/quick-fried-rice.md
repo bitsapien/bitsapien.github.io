@@ -2,6 +2,9 @@
 title: "Quick Fried Rice"
 date: 2021-01-02T13:35:56+05:30
 draft: false
+tags:
+  - food
+  - oriental
 ---
 
 ### Things you need

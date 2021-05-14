@@ -9,6 +9,7 @@ categories:
 tags:
   - discrimination
   - caste
+  - society
 ---
 
 _Dr. B R Ambedkar_
