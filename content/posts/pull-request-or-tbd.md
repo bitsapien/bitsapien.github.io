@@ -10,10 +10,24 @@ tags:
 I've worked in a PR based model for 3+ years for now (including 1 year at TW).
 It is time for me take a critical look at these 2 approaches.
 
-### MR? PR?
-* PR - Pull Request _Something that you would find in Github_
-* MR - Merge Request _Something you'd find in Gitlab_
+### MR? PR? TBD? 🤯
 
+#### PR (Pull Request)
+
+  Developers in the team create a branch for development and raise a request to
+  merge it into `master` or the main trunk of the project.
+  _Calling it a PR is a more Github-y language_
+
+#### MR (Merge Request)
+
+  _Same as PR, but a more Gitlab-y language_
+
+#### TBD (Trunk Based Development)
+
+  Team pushes to `master` or the main trunk of the project directly.
+
+
+---
 
 ### Arguments I've heard against the MR/PR based model
 1. **Long lived feature branches**
