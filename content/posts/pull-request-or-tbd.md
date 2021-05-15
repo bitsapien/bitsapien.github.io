@@ -67,8 +67,8 @@ It is time for me take a critical look at these 2 approaches.
 
 9. **Feature flagging not a pre-requisite**
 
-  I have recently faced this problem, and I think TBD makes you more careful
-  developer when it comes to pushing your code.
+   I have recently faced this problem, and I think TBD makes you more careful
+   developer when it comes to pushing your code.
 
 ### Good things about PR based model
 1. **Low trust situations and poor CI/CD**
