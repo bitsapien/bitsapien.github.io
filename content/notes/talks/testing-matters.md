@@ -6,6 +6,7 @@ tags:
   - technology
   - testing
   - talks
+  - software-delivery
 ---
 
 
