@@ -12,3 +12,6 @@ draft: true
 - Design in an open world
 - Types are baking opinions, and agility is affected
 - Emmerson example of authz lib using dynamoDB
+
+
+https://news.ycombinator.com/item?id=26314756
