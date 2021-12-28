@@ -1,7 +1,7 @@
 #! /bin/zsh
 
 blog_server=$(which hugo)
-blog_path="$HOME/gitdisk/projects/bitsapien-blog"
+blog_path="$BLOG_PATH" # Set in dotfiles/env
 ci_skip_commit_string="[skip ci]"
 
 alias editnow="$blog_server server -D > /tmp/hugo.log & $EDITOR $blog_path/content/now/index.md"
