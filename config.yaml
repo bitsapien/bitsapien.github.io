@@ -6,9 +6,8 @@ enableEmoji: true
 description: Personal site for bitsapien
 enableRobotsTXT: true
 disableRSS: false
-author:
-  name: bitsapien
 params:
+  author: bitsapien
   dateform: 'Jan 2, 2006'
   dateformShort: Jan 2
   dateformNum: '2006-01-02'
