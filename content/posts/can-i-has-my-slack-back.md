@@ -7,7 +7,7 @@ tags:
   - chat
   - product thinking
 ---
-{{< image src="/img/can-i-haz-my-meme.jpg" position="center" style="height: 300px;">}}
+{{< figure src="/img/can-i-haz-my-meme.jpg" position="center" style="height: 300px;">}}
 
 Some context so you empathize with my frustrations that I'd unfold in this post.
 
@@ -18,24 +18,24 @@ I only truly started appreciating Slack after all my frustrations with Microsoft
 Let me give you a few examples of how irritating things can get from a user experience perspective:
 
 #### -> You can have only 6 reactions, human ! 🤐
-{{< image src="/img/ms-teams-reactions.png" alt="MS Teams Reactions" position="center" style="width: 100%;border-radius: 5px;" >}}
+{{< figure src="/img/ms-teams-reactions.png" alt="MS Teams Reactions" position="center" style="width: 100%;border-radius: 5px;" >}}
 
 Like, seriously?
 
 Also, one post can have only one reaction, cause are you even human if you have mixed emotions?
 Look at what Google Chat offers, for example.
 
-{{< image src="/img/google-chat-reactions.png" alt="Google Chat Reactions" position="center" style="width: 100%;border-radius: 5px;box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14) , 0px 3px 1px -2px rgba(0,0,0,0.12) , 0px 1px 5px 0px rgba(0,0,0,0.2);" >}}
+{{< figure src="/img/google-chat-reactions.png" alt="Google Chat Reactions" position="center" style="width: 100%;border-radius: 5px;box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14) , 0px 3px 1px -2px rgba(0,0,0,0.12) , 0px 1px 5px 0px rgba(0,0,0,0.2);" >}}
 
 
 #### -> Because the order in which you type your markdown matters 🤷🏽‍♂️
-{{< image src="/img/ms-teams-markdown.gif" alt="MS Teams Markdown GIF" position="center" style="height: 150px;border-radius: 5px;" >}}
+{{< figure src="/img/ms-teams-markdown.gif" alt="MS Teams Markdown GIF" position="center" style="height: 150px;border-radius: 5px;" >}}
 
 To start with, the inplace markdown to styling is highly irritating, to make matters worse, it only works when you type things in a particular order that has been pre-determined by Teams.
 
 #### -> Guests are not humans and don't have a face 🤦🏼‍♀️
 
-{{< image src="/img/ms-teams-guest-profile.png" alt="MS Teams Reactions" position="center" style="border-radius: 5px;" >}}
+{{< figure src="/img/ms-teams-guest-profile.png" alt="MS Teams Reactions" position="center" style="border-radius: 5px;" >}}
 
 Contractors or consultants are invited as "guests" into Microsoft Teams by client companies and do not have the kind of privileges as the employees, which is fair. What I do not understand is the restriction for guests to add their own profile picture.
 
@@ -75,13 +75,13 @@ Allowing me to switch off this feature and preserving the chronology of the thre
 
 #### -> I'll follow your face when on a video call.
 
-{{< image src="/img/ms-teams-video-call.jpg" alt="MS Teams Video" position="center" style="border-radius: 5px;" >}}
+{{< figure src="/img/ms-teams-video-call.jpg" alt="MS Teams Video" position="center" style="border-radius: 5px;" >}}
 One of the features that I really like about Teams is how the video adjusts itself to show the face of the people on the call, irrespective of what kinda crop it did to fit everyone in.
 ms-teams-video-call
 
 #### -> Quick access to documents, or even an issue tracker built into the app.
 
-{{< image src="/img/ms-teams-todo.png" alt="MS Teams Markdown GIF" position="center" style="height: 150px;border-radius: 5px;" >}}
+{{< figure src="/img/ms-teams-todo.png" alt="MS Teams Markdown GIF" position="center" style="height: 150px;border-radius: 5px;" >}}
 
 None of the other platforms I've used have this feature and I really like the fact that I do not have to open the browser and do a login dance if I have to access a document.
 

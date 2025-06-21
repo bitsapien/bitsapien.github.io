@@ -15,7 +15,7 @@ The basic flow involves the client application to request authorization from the
 resource owner, which is usually in the form of a token. This token can then be
 used by the client application to "do" things on behalf of the resource owner.
 
-{{< image src="/img/oauth-20.png" position="center" >}}
+{{< figure src="/img/oauth-20.png" position="center" >}}
 
 ### Terminology
 
