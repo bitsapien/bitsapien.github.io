@@ -15,7 +15,7 @@ default:
     - apk add --update --no-cache git go
     - git submodule update --init --recursive
     - hugo mod init gitlab.com/bitsapien/blog
-    - hugo mod get -u github.com/rhazdon/hugo-theme-hello-friend-ng
+    - hugo mod get -u github.com/alex-shpak/hugo-book
 
 
 pages:
