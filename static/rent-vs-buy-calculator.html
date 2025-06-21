@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent vs Buy Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/3.0.0/pure-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/3.0.0/grids-responsive-min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            margin: 0;
+            opacity: 0.9;
+        }
+
+        .main-content {
+            padding: 30px;
+        }
+
+        .pure-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 0.95rem;
+        }
+
+        .pure-form input[type="number"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .pure-form input[type="number"]:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
+
+        .pure-button-primary {
+            background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .pure-button-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(46, 204, 113, 0.3);
+        }
+
+        .section-card {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            color: #2c3e50;
+            margin: 0 0 25px 0;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .result-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid #3498db;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .result-card.rent {
+            border-left-color: #e74c3c;
+        }
+
+        .result-card.buy {
+            border-left-color: #27ae60;
+        }
+
+        .result-card h3 {
+            color: #2c3e50;
+            margin: 0 0 15px 0;
+            font-size: 1.2rem;
+        }
+
+        .result-value {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+
+        .result-card.rent .result-value {
+            color: #e74c3c;
+        }
+
+        .result-card.buy .result-value {
+            color: #27ae60;
+        }
+
+        .result-description {
+            color: #6c757d;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        .recommendation {
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+
+        .recommendation.rent {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+        }
+
+        .recommendation.buy {
+            background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+        }
+
+        .recommendation h3 {
+            font-size: 1.5rem;
+            margin: 0 0 20px 0;
+            font-weight: 700;
+        }
+
+        .recommendation p {
+            line-height: 1.6;
+            margin: 0 0 15px 0;
+        }
+
+        .recommendation p:last-child {
+            margin-bottom: 0;
+        }
+
+        .breakdown {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+
+        .breakdown h4 {
+            color: #2c3e50;
+            margin: 0 0 20px 0;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .breakdown-section {
+            margin-bottom: 25px;
+        }
+
+        .breakdown-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .breakdown-section h5 {
+            margin: 0 0 15px 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .breakdown-section.rent h5 {
+            color: #e74c3c;
+        }
+
+        .breakdown-section.buy h5 {
+            color: #27ae60;
+        }
+
+        .breakdown-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #f1f3f4;
+        }
+
+        .breakdown-item:last-child {
+            border-bottom: none;
+            font-weight: 600;
+            color: #2c3e50;
+            padding-top: 15px;
+            border-top: 2px solid #e9ecef;
+        }
+
+        .breakdown-item span:first-child {
+            color: #6c757d;
+        }
+
+        .breakdown-item:last-child span:first-child {
+            color: #2c3e50;
+        }
+
+        .placeholder {
+            text-align: center;
+            padding: 80px 20px;
+            color: #6c757d;
+        }
+
+        .placeholder h3 {
+            font-size: 1.4rem;
+            margin: 0 0 15px 0;
+            color: #2c3e50;
+        }
+
+        .placeholder p {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .main-content {
+                padding: 20px;
+            }
+            
+            .result-value {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* Pure CSS Grid enhancements */
+        .pure-g {
+            letter-spacing: normal;
+        }
+
+        .pure-u-1,
+        .pure-u-1-2,
+        .pure-u-md-1-2 {
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        .pure-u-1 {
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Rent vs Buy Calculator</h1>
+            <p>Make informed decisions about your housing with comprehensive financial analysis</p>
+        </div>
+
+        <div class="main-content">
+            <div class="pure-g">
+                <!-- Input Section -->
+                <div class="pure-u-1 pure-u-md-1-2">
+                    <div class="section-card">
+                        <h2 class="section-title">Financial Parameters</h2>
+                        
+                        <form class="pure-form pure-form-stacked">
+                            <fieldset>
+                                <label for="currentRent">Current Monthly Rent (£)</label>
+                                <input type="number" id="currentRent" value="1500" min="0" class="pure-input-1">
+
+                                <label for="propertyPrice">Property Purchase Price (£)</label>
+                                <input type="number" id="propertyPrice" value="400000" min="0" class="pure-input-1">
+
+                                <label for="deposit">Deposit Amount (£)</label>
+                                <input type="number" id="deposit" value="80000" min="0" class="pure-input-1">
+
+                                <label for="mortgageRate">Mortgage Interest Rate (%)</label>
+                                <input type="number" id="mortgageRate" value="5.5" min="0" max="20" step="0.1" class="pure-input-1">
+
+                                <label for="propertyGrowth">Annual Property Growth Rate (%)</label>
+                                <input type="number" id="propertyGrowth" value="3" min="-10" max="20" step="0.1" class="pure-input-1">
+
+                                <label for="rentGrowth">Annual Rent Growth Rate (%)</label>
+                                <input type="number" id="rentGrowth" value="3" min="0" max="20" step="0.1" class="pure-input-1">
+
+                                <label for="timeHorizon">Time Horizon (Years)</label>
+                                <input type="number" id="timeHorizon" value="10" min="1" max="50" class="pure-input-1">
+
+                                <label for="stampDuty">One-time Costs (Stamp Duty, etc.) (%)</label>
+                                <input type="number" id="stampDuty" value="1" min="0" max="20" step="0.1" class="pure-input-1">
+
+                                <label for="maintenanceCost">Annual Maintenance Cost (%)</label>
+                                <input type="number" id="maintenanceCost" value="1" min="0" max="10" step="0.1" class="pure-input-1">
+
+                                <label for="investmentReturn">Investment Return on Saved Capital (%)</label>
+                                <input type="number" id="investmentReturn" value="6" min="0" max="20" step="0.1" class="pure-input-1">
+
+                                <button type="button" class="pure-button pure-button-primary" onclick="calculateRentVsBuy()">
+                                    Calculate & Compare
+                                </button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Results Section -->
+                <div class="pure-u-1 pure-u-md-1-2">
+                    <div class="section-card">
+                        <h2 class="section-title">Financial Analysis</h2>
+                        
+                        <div id="results" class="hidden">
+                            <div class="pure-g">
+                                <div class="pure-u-1 pure-u-md-1-2">
+                                    <div class="result-card rent">
+                                        <h3>Net Worth if Renting</h3>
+                                        <div class="result-value" id="rentNetWorth">£0</div>
+                                        <p class="result-description">Total invested capital plus returns</p>
+                                    </div>
+                                </div>
+
+                                <div class="pure-u-1 pure-u-md-1-2">
+                                    <div class="result-card buy">
+                                        <h3>Net Worth if Buying</h3>
+                                        <div class="result-value" id="buyNetWorth">£0</div>
+                                        <p class="result-description">Property equity minus costs</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="recommendation" class="recommendation">
+                                <h3 id="recommendationTitle">Recommendation</h3>
+                                <div id="recommendationText"></div>
+                            </div>
+                        </div>
+
+                        <div id="placeholder" class="placeholder">
+                            <h3>Enter your financial parameters and click Calculate</h3>
+                            <p>Get a comprehensive analysis of rent vs buy scenarios</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Breakdown Section -->
+            <div id="breakdownSection" class="hidden">
+                <div class="breakdown">
+                    <h4>Detailed Financial Breakdown</h4>
+                    <div class="pure-g">
+                        <div class="pure-u-1 pure-u-md-1-2">
+                            <div class="breakdown-section rent">
+                                <h5>Renting Scenario</h5>
+                                <div id="rentBreakdown"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="pure-u-1 pure-u-md-1-2">
+                            <div class="breakdown-section buy">
+                                <h5>Buying Scenario</h5>
+                                <div id="buyBreakdown"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calculateRentVsBuy() {
+            // Get input values
+            const currentRent = parseFloat(document.getElementById('currentRent').value) || 0;
+            const propertyPrice = parseFloat(document.getElementById('propertyPrice').value) || 0;
+            const deposit = parseFloat(document.getElementById('deposit').value) || 0;
+            const mortgageRate = parseFloat(document.getElementById('mortgageRate').value) / 100 || 0;
+            const propertyGrowth = parseFloat(document.getElementById('propertyGrowth').value) / 100 || 0;
+            const rentGrowth = parseFloat(document.getElementById('rentGrowth').value) / 100 || 0;
+            const timeHorizon = parseInt(document.getElementById('timeHorizon').value) || 0;
+            const stampDuty = parseFloat(document.getElementById('stampDuty').value) / 100 || 0;
+            const maintenanceCost = parseFloat(document.getElementById('maintenanceCost').value) / 100 || 0;
+            const investmentReturn = parseFloat(document.getElementById('investmentReturn').value) / 100 || 0;
+
+            // Validate inputs
+            if (currentRent <= 0 || propertyPrice <= 0 || timeHorizon <= 0) {
+                alert('Please enter valid positive values for rent, property price, and time horizon.');
+                return;
+            }
+
+            // Calculate mortgage details
+            const loanAmount = propertyPrice - deposit;
+            const monthlyMortgageRate = mortgageRate / 12;
+            const totalPayments = timeHorizon * 12;
+            
+            // Monthly mortgage payment calculation
+            let monthlyMortgagePayment = 0;
+            if (mortgageRate > 0) {
+                monthlyMortgagePayment = loanAmount * (monthlyMortgageRate * Math.pow(1 + monthlyMortgageRate, totalPayments)) / 
+                                      (Math.pow(1 + monthlyMortgageRate, totalPayments) - 1);
+            } else {
+                monthlyMortgagePayment = loanAmount / totalPayments;
+            }
+
+            // Calculate one-time costs
+            const oneTimeCosts = propertyPrice * stampDuty;
+
+            // Calculate scenarios
+            const rentScenario = calculateRentScenario(currentRent, rentGrowth, timeHorizon, deposit + oneTimeCosts, investmentReturn, propertyPrice, maintenanceCost);
+            const buyScenario = calculateBuyScenario(propertyPrice, propertyGrowth, timeHorizon, deposit, oneTimeCosts, 
+                                                   monthlyMortgagePayment, maintenanceCost, loanAmount, mortgageRate, investmentReturn);
+
+            // Display results
+            displayResults(rentScenario, buyScenario, timeHorizon);
+        }
+
+        function calculateRentScenario(currentRent, rentGrowth, timeHorizon, initialInvestment, investmentReturn, propertyPrice, maintenanceCost) {
+            let totalRentPaid = 0;
+            let investmentValue = initialInvestment;
+            let monthlyRent = currentRent;
+            let monthlySavings = 0;
+
+            // Calculate what would be the monthly ownership cost for comparison
+            const monthlyMaintenanceCost = (propertyPrice * maintenanceCost) / 12;
+            
+            for (let year = 0; year < timeHorizon; year++) {
+                // Calculate annual rent
+                const annualRent = monthlyRent * 12;
+                totalRentPaid += annualRent;
+                
+                // Monthly savings (difference between potential mortgage payment and rent)
+                monthlySavings = monthlyMaintenanceCost;
+                
+                // Invest the savings
+                const additionalInvestment = monthlySavings * 12;
+                investmentValue = (investmentValue + additionalInvestment) * (1 + investmentReturn);
+                
+                // Increase rent for next year
+                monthlyRent *= (1 + rentGrowth);
+            }
+
+            return {
+                totalRentPaid: totalRentPaid,
+                investmentValue: investmentValue,
+                netWorth: investmentValue,
+                totalSavingsInvested: initialInvestment + (monthlySavings * 12 * timeHorizon)
+            };
+        }
+
+        function calculateBuyScenario(propertyPrice, propertyGrowth, timeHorizon, deposit, oneTimeCosts, 
+                                    monthlyMortgagePayment, maintenanceCost, loanAmount, mortgageRate, investmentReturn) {
+            let propertyValue = propertyPrice;
+            let remainingLoan = loanAmount;
+            let totalInterestPaid = 0;
+            let totalMaintenancePaid = 0;
+
+            for (let year = 0; year < timeHorizon; year++) {
+                // Calculate annual property appreciation
+                propertyValue *= (1 + propertyGrowth);
+                
+                // Calculate mortgage payments for the year
+                for (let month = 0; month < 12; month++) {
+                    if (remainingLoan > 0) {
+                        const interestPayment = remainingLoan * (mortgageRate / 12);
+                        const principalPayment = monthlyMortgagePayment - interestPayment;
+                        
+                        totalInterestPaid += interestPayment;
+                        remainingLoan = Math.max(0, remainingLoan - principalPayment);
+                    }
+                }
+                
+                // Annual maintenance cost
+                const annualMaintenance = propertyValue * maintenanceCost;
+                totalMaintenancePaid += annualMaintenance;
+            }
+
+            const totalEquity = propertyValue - remainingLoan;
+            const totalCosts = deposit + oneTimeCosts + totalInterestPaid + totalMaintenancePaid;
+            const netWorth = totalEquity - oneTimeCosts;
+
+            return {
+                propertyValue: propertyValue,
+                remainingLoan: remainingLoan,
+                totalEquity: totalEquity,
+                totalInterestPaid: totalInterestPaid,
+                totalMaintenancePaid: totalMaintenancePaid,
+                netWorth: netWorth,
+                totalCosts: totalCosts,
+                monthlyMortgagePayment: monthlyMortgagePayment
+            };
+        }
+
+        function displayResults(rentScenario, buyScenario, timeHorizon) {
+            // Show results section
+            document.getElementById('results').classList.remove('hidden');
+            document.getElementById('breakdownSection').classList.remove('hidden');
+            document.getElementById('placeholder').style.display = 'none';
+
+            // Display net worth values
+            document.getElementById('rentNetWorth').textContent = formatCurrency(rentScenario.netWorth);
+            document.getElementById('buyNetWorth').textContent = formatCurrency(buyScenario.netWorth);
+
+            // Determine recommendation
+            const difference = buyScenario.netWorth - rentScenario.netWorth;
+            const recommendationEl = document.getElementById('recommendation');
+            const titleEl = document.getElementById('recommendationTitle');
+            const textEl = document.getElementById('recommendationText');
+
+            if (difference > 0) {
+                recommendationEl.className = 'recommendation buy';
+                titleEl.textContent = 'Recommendation: BUY';
+                textEl.innerHTML = `
+                    <p><strong>Buying is financially better by ${formatCurrency(Math.abs(difference))} over ${timeHorizon} years.</strong></p>
+                    <p>Reasons to buy:</p>
+                    <p>• Building equity through property ownership creates long-term wealth</p>
+                    <p>• Property appreciation provides capital gains over time</p>
+                    <p>• Fixed mortgage payments provide protection against rent increases</p>
+                    <p>• Tax benefits and potential rental income opportunities</p>
+                    <p>• Greater control over your living space and modifications</p>
+                `;
+            } else {
+                recommendationEl.className = 'recommendation rent';
+                titleEl.textContent = 'Recommendation: RENT';
+                textEl.innerHTML = `
+                    <p><strong>Renting is financially better by ${formatCurrency(Math.abs(difference))} over ${timeHorizon} years.</strong></p>
+                    <p>Reasons to rent:</p>
+                    <p>• Lower upfront costs allow for more investment capital</p>
+                    <p>• Greater flexibility to relocate or upgrade housing</p>
+                    <p>• No maintenance costs or property-related responsibilities</p>
+                    <p>• Diversified investment portfolio may outperform property</p>
+                    <p>• No exposure to property market downturns or interest rate rises</p>
+                `;
+            }
+
+            // Display breakdown
+            displayBreakdown(rentScenario, buyScenario);
+        }
+
+        function displayBreakdown(rentScenario, buyScenario) {
+            const rentBreakdownEl = document.getElementById('rentBreakdown');
+            const buyBreakdownEl = document.getElementById('buyBreakdown');
+            
+            rentBreakdownEl.innerHTML = `
+                <div class="breakdown-item">
+                    <span>Total Rent Paid:</span>
+                    <span>${formatCurrency(rentScenario.totalRentPaid)}</span>
+                </div>
+                <div class="breakdown-item">
+                    <span>Investment Value:</span>
+                    <span>${formatCurrency(rentScenario.investmentValue)}</span>
+                </div>
+                <div class="breakdown-item">
+                    <span>Net Worth:</span>
+                    <span>${formatCurrency(rentScenario.netWorth)}</span>
+                </div>
+            `;
+            
+            buyBreakdownEl.innerHTML = `
+                <div class="breakdown-item">
+                    <span>Property Value:</span>
+                    <span>${formatCurrency(buyScenario.propertyValue)}</span>
+                </div>
+                <div class="breakdown-item">
+                    <span>Remaining Loan:</span>
+                    <span>${formatCurrency(buyScenario.remainingLoan)}</span>
+                </div>
+                <div class="breakdown-item">
+                    <span>Total Interest Paid:</span>
+                    <span>${formatCurrency(buyScenario.totalInterestPaid)}</span>
+                </div>
+                <div class="breakdown-item">
+                    <span>Total Maintenance:</span>
+                    <span>${formatCurrency(buyScenario.totalMaintenancePaid)}</span>
+                </div>
+                <div class="breakdown-item">
+                    <span>Net Worth:</span>
+                    <span>${formatCurrency(buyScenario.netWorth)}</span>
+                </div>
+            `;
+        }
+
+        function formatCurrency(amount) {
+            return new Intl.NumberFormat('en-GB', {
+                style: 'currency',
+                currency: 'GBP',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
+            }).format(amount);
+        }
+
+        // Auto-calculate when page loads with default values
+        window.addEventListener('load', function() {
+            calculateRentVsBuy();
+        });
+    </script>
+</body>
+</html>
