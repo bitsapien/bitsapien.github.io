@@ -1,7 +1,8 @@
+googleAnalytics: G-7VJRXWJ6D6
 baseURL: 'https://blog.bitsapien.dev/'
 languageCode: en-us
 title: bitsapien
-theme: hello-friend-ng
+theme: hugo-book
 enableEmoji: true
 description: Personal site for bitsapien
 enableRobotsTXT: true
@@ -22,19 +23,6 @@ params:
   defaultTheme: white
   customCSS:
     - /css/custom.css
-  social:
-    - name: twitter
-      url: https://twitter.com/bitsapien_logs
-    - name: github
-      url: https://github.com/bitsapien
-    - name: youtube
-      url: https://www.youtube.com/channel/UC2ieJeXoa5NQQHbvjdVG32A
-      #    - name: gitlab
-      #      url: https://gitlab.com/bitsapien
-      #    - name: linkedin
-      #      url: https://linkedin.com/in/cspacerahul
-      #    - name: stackoverflow
-      #      url: https://stackoverflow.com/users/755421/bitsapien
 taxonomies:
   category: categories
   tag: tags
